@@ -34,7 +34,7 @@ class Queue:
             current = current.next
 
         return length
-        pass
+        #pass
 
     def enqueue(self, value):
         if self.last is None:
@@ -43,7 +43,7 @@ class Queue:
         else:
             self.last.next = Node(value)
             self.last = self.last.next
-        pass
+        #pass
 
     def dequeue(self):
         if self.head is None:
@@ -52,4 +52,4 @@ class Queue:
             to_return = self.head.data
             self.head = self.head.next
             return to_return
-        pass
+        #pass
